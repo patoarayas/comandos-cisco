@@ -41,6 +41,24 @@
 
 (config-if)#no shutdown //Levanta el enlace
 
+
+## Protocolos de enrutamiento
+
+### EIGRP
+
+(config)#router eigrp
+
+(config-router)#network \<ip red> \<mask inv>
+ 
+\#show ip eigrp neighbors
+
+### OSPF
+
+(config)#router ospf \<id>
+
+(config-router)#network \<ip red> \<mask inv> area \<id area>
+
+
 ## Switch
 (config)#ip routing //habilita enrutamiento capa 2
 
@@ -82,7 +100,7 @@
 
 (config-dhcp)#dns-server \<dns>
 
-### FHRP
+### HSRP - FHRP
 (config-if)#standby \<NºGrupo> ip \<ip>
 
 (config-if)#standby \<NºGrupo> priority \<Nº>
