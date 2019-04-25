@@ -57,7 +57,7 @@
 
 
 
-### Switch de distribucion (Paso 5)
+### Switch de distribucion (Paso 5)
 
 
 	*Crear las VLAN en solo uno de los servidores en modo servidor (al configurar el vtp antes se comparten a todos ls switches)
@@ -75,7 +75,7 @@
 
 
 
-### Switch de acceso (Paso 6)
+### Switch de acceso (Paso 6)
 
 
 	*Configurar Spanning-tree en cada switch
