@@ -11,7 +11,7 @@
       - Ej: IP, ICMP, TCP, UDP
   - Se aplican a una interfaz de un router (Para la entrada *o* salida) 
   
-  *Lista ACL:
+  * Lista ACL:
     - Sentencia 1 (Permitir o denegar)
     - Sentencia 2 (Permitir o denegar)
     - Sentencia n (Permitir o denegar)
