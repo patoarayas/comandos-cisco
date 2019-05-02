@@ -24,6 +24,7 @@
         - Sintaxis: access-list [N°lista] [permit-deny] [ip-origen] [wildcar-mask]
         - Ejemplo:´access-list 10 permit 192.168.30.0 0.0.0.255´
       - ACL EXtendida (100-199)
+        - Se aplica lo mas cerca del origen
         - Sintaxis: acces-list [N°lista] [permit-deny] [protocolo] [ip-origen] [wildcard-mask] [ip-destino] eq [puerto]
         - Ejemplo: ´acces-list 103 permit tcp 192.168.30.0 0.0.0.255 any eq 80
         
