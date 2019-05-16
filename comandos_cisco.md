@@ -13,7 +13,7 @@
 
 (config-line)#login //Setea la constraseña indicada anteriormente
 
-(config)#line very 0 4
+(config)#line vty 0 4
 
 (config)#banner motd # //Configura mensajes inicio de sesion
 ### Verificacion de configuracion
