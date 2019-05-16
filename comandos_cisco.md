@@ -130,7 +130,7 @@
 
 (config)#access-list \<Nºlista> permit \<ip-inside> \<mask-inv>
 
-(config)#ip nat inside source list \<NºLista> \<interfaz> overload
+(config)#ip nat inside source list \<NºLista> \<interfaz-salida> overload
 
 
 
