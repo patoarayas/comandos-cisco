@@ -20,6 +20,8 @@
     6. En el Switch configurar DHCP para la pool de la SSID
     7. Configurar int vlan para el gateway
     8. (Opcional) Neetwork Interfaces->FastEthernet->Settings->Enable Ethernet
-    
-    
+    9. Para dar conexion a internet se debe hacer desde el router
+      - Configurar ruta por defecto en el router hacia Internet
+      - Configurar ruta por defecto en el Switch hacia el Router
+      (config)#ip route 0.0.0.0 0.0.0.0 /<direccion-proximo-salto>
         
