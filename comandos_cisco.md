@@ -44,6 +44,10 @@
 
 ## Protocolos de enrutamiento
 
+### RIP v1 
+
+(config) router rip 1
+(config) network \<ip red>  //si hay mas de una red se colocan todas
 ### EIGRP
 
 (config)#router eigrp
