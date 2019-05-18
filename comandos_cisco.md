@@ -48,7 +48,7 @@
 
 (config) router rip 1
 
-(config) network \<ip red>  //si hay mas de una red se colocan todas
+(config-router) network \<ip red>  //si hay mas de una red se colocan todas, sin mascaras por ser protocolos con clase
 ### EIGRP
 
 (config)#router eigrp
