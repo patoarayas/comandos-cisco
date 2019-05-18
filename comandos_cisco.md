@@ -46,9 +46,12 @@
 
 ### RIP v1 
 
-(config) router rip 1
+(config)# router rip 1
 
-(config-router) network \<ip red>  //si hay mas de una red se colocan todas, sin mascaras por ser protocolos con clase
+(config-router)# network \<ip red>  //si hay mas de una red se colocan todas, sin mascaras por ser protocolos con clase
+
+(config-router)#passive-interface <interface/serial> //bloquea el broadcast hacia la interfaz/serial, para bloquear donde no hayan router
+
 ### EIGRP
 
 (config)#router eigrp
