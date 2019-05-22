@@ -68,6 +68,8 @@
 
 ### Nota: Mask Inv = 255.255.255.255 - Máscara - Ejemplo: 255.255.255.255 - 255.255.255.252 = 0.0.0.3
 
+### Nota 2: Métrica = (Bandwidth - Delay) * 256 
+
 ### EIGRP
 
 (config)#router eigrp
@@ -94,6 +96,7 @@
 (config-if)#switchport acces vlan \<NºVlan>
 
 (config-if)#switchport trunk encapsulation dot1q
+
 ### Configurar VLAN
 (config)#vlan \<NºVlan>
 
@@ -103,6 +106,7 @@
 (config)#vtp domain \<dominio>
 
 (config)#vtp version \<Nº>2
+
 ### VTP Cliente
 (config)#vtp mode client
 
