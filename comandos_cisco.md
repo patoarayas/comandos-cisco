@@ -52,6 +52,20 @@
 
 (config-router)#passive-interface <interface/serial> //bloquea el broadcast hacia la interfaz/serial, para bloquear donde no hayan router
 
+### RIP v2
+
+(config)# router rip 
+
+(config-router)# version 2
+
+(config-router)# no auto-summary // Para que no haga resumen de rutas
+
+(config-router)#passive-interface <interface/serial> //bloquea el broadcast hacia la interfaz/serial, para bloquear donde no hayan router
+
+(config-router)# network \<ip red>  //si hay mas de una red se colocan todas, sin mascaras por ser protocolos con clase
+
+(config-router)# default information originate
+
 ### EIGRP
 
 (config)#router eigrp
