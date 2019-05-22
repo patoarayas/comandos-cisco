@@ -66,6 +66,8 @@
 
 (config-router)# default information originate
 
+### Nota: Mask Inv = 255.255.255.255 - Máscara - Ejemplo: 255.255.255.255 - 255.255.255.252 = 0.0.0.3
+
 ### EIGRP
 
 (config)#router eigrp
