@@ -44,6 +44,32 @@
 
 ## Protocolos de enrutamiento
 
+### RIP v1 
+
+(config)# router rip 1
+
+(config-router)# network \<ip red>  //si hay mas de una red se colocan todas, sin mascaras por ser protocolos con clase
+
+(config-router)#passive-interface <interface/serial> //bloquea el broadcast hacia la interfaz/serial, para bloquear donde no hayan router
+
+### RIP v2
+
+(config)# router rip 
+
+(config-router)# version 2
+
+(config-router)# no auto-summary // Para que no haga resumen de rutas
+
+(config-router)#passive-interface <interface/serial> //bloquea el broadcast hacia la interfaz/serial, para bloquear donde no hayan router
+
+(config-router)# network \<ip red>  //si hay mas de una red se colocan todas, sin mascaras por ser protocolos con clase
+
+(config-router)# default information originate
+
+### Nota: Mask Inv = 255.255.255.255 - Máscara - Ejemplo: 255.255.255.255 - 255.255.255.252 = 0.0.0.3
+
+### Nota 2: Métrica = (Bandwidth - Delay) * 256 
+
 ### EIGRP
 
 (config)#router eigrp
@@ -70,6 +96,7 @@
 (config-if)#switchport acces vlan \<NºVlan>
 
 (config-if)#switchport trunk encapsulation dot1q
+
 ### Configurar VLAN
 (config)#vlan \<NºVlan>
 
@@ -79,6 +106,7 @@
 (config)#vtp domain \<dominio>
 
 (config)#vtp version \<Nº>2
+
 ### VTP Cliente
 (config)#vtp mode client
 
