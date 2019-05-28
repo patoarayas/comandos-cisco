@@ -152,13 +152,13 @@
 (config-if)#switchport mode trunk
 
 ### NAT
-(config-if)#nat inside
+(config-if)#ip nat inside
 
-(config-if)#nat outside
+(config-if)#ip nat outside
 
 (config)#access-list \<Nºlista> permit \<ip-inside> \<mask-inv>
 
-(config)#ip nat inside source list \<NºLista> \<interfaz-salida> overload
+(config)#ip nat inside source list \<NºLista> int \<interfaz-salida> overload
 
 
 
